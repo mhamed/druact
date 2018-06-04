@@ -9,9 +9,10 @@
     "react-router-dom": "^4.1.1"
   },
   "devDependencies": {
+    "node-sass": "^4.5.2",
     "npm-run-all": "^4.0.2",
-    "react-scripts": "0.9.5",
-    "node-sass": "^4.5.2"
+    "react-build-dist": "^0.0.8",
+    "react-scripts": "0.9.5"
   },
   "scripts": {
     "start-js": "react-scripts start",
@@ -20,6 +21,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "build-css": "node-sass src/ -o src/",
-    "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive"
+    "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive",
+    "build:dist": "react-build-dist"
   }
 }
